@@ -65,3 +65,7 @@ This stage does not claim completed CFD or field validation. Numerical findings 
 
 This repository is a scientific research portfolio and an evolving validation workspace. It is intended to support constructive collaboration with the AeoLiS community.
 
+## License
+
+This repository is licensed under the [GNU General Public License v3.0](LICENSE). AeoLiS is a separate upstream project distributed under the same license; its copyright remains with the AeoLiS contributors. See [UPSTREAM.md](UPSTREAM.md) for version, attribution, and provenance details.
+
