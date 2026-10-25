@@ -1,0 +1,59 @@
+{
+  "baseline": {
+    "version": "AeoLiS 3.1.0rc1",
+    "commit": "1fcbe86d173f964e6ee231c0ee917ca3a6cd3f5e"
+  },
+  "flat_bed": {
+    "max_abs_dtaux": 0.0,
+    "max_abs_dtauy": 0.0,
+    "pass": true
+  },
+  "along_wind_ridge": {
+    "rms_dtaux": 1.294388487969446,
+    "rms_dtauy": 0.0,
+    "transverse_ratio": 0.0,
+    "pass": true
+  },
+  "crosswind_only_topography": {
+    "rms_dtaux": 0.0,
+    "rms_dtauy": 0.0,
+    "pass_under_linear_theory": true,
+    "interpretation": "Expected for the implemented along-wind linear perturbation theory; not a general CFD result."
+  },
+  "vertical_datum_invariance": {
+    "max_abs_x_difference": 1.1754486273218845e-13,
+    "max_abs_y_difference": 0.0,
+    "pass": true
+  },
+  "configured_length_scale_sensitivity": {
+    "cases": {
+      "25.0": {
+        "rms_dtaux": 1.0260150821305896,
+        "rms_dtauy": 0.0
+      },
+      "100.0": {
+        "rms_dtaux": 1.294388487969446,
+        "rms_dtauy": 0.0
+      },
+      "400.0": {
+        "rms_dtaux": 1.5678219356635865,
+        "rms_dtauy": 0.0
+      }
+    },
+    "max_to_min_rms_ratio": 1.5280690927153804,
+    "interpretation": "The legacy Weng implementation uses one configured L for every Fourier mode."
+  },
+  "spatially_variable_roughness": {
+    "exception": {
+      "type": "ValueError",
+      "message": "operands could not be broadcast together with shapes (4032,) (64,64) "
+    },
+    "pass": false,
+    "interpretation": "Adaptive roughness returns an array; the FFT implementation mixes a 2-D inner-layer array with a 1-D Fourier mask."
+  },
+  "oblique_mode": {
+    "finite": true,
+    "rms_dtaux": 1.0434953986496915,
+    "rms_dtauy": 0.23245047879404224
+  }
+}

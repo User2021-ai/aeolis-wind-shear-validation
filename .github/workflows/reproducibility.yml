@@ -1,0 +1,22 @@
+name: Reproducibility checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  shear-sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run shear sanity checks
+        run: |
+          python AeoLiS_Investigation/07_reproducibility/scripts/shear_sanity_checks.py \
+            --output /tmp/shear_sanity_results.json
+
