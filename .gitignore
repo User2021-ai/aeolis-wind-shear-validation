@@ -1,0 +1,31 @@
+# Local upstream checkout and private publication planning
+source/
+AeoLiS_Investigation/GITHUB_PUBLICATION_GUIDE.md
+AeoLiS_Investigation/00_project_scope/investigation_notes.md
+
+# Python and tests
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Large generated modelling output
+*.nc
+*.foam
+processor*/
+postProcessing/
+constant/polyMesh/
+
+# Temporary output
+tmp/
+*.log
+
