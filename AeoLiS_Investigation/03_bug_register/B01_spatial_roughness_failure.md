@@ -174,3 +174,28 @@ Observed results against the clean audited checkout:
 The [saved evidence](../07_reproducibility/results/b01_roughness_results.json) confirms that array representation alone is sufficient to trigger B01. Even a physically homogeneous roughness field fails when represented as a two-dimensional array. These are direct operator tests; full adaptive model runs remain a separate integration test.
 
 For a future correction, a uniform field can be reduced to its identical scalar value without losing spatial information. A varying field requires an explicit modelling decision. This distinction should guide the eventual interface design; the present experiment does not modify the upstream solver.
+
+## Proposed safeguard prototype (28 October 2026)
+
+The local [roughness guard](../07_reproducibility/scripts/b01_roughness_guard.py) implements that input contract. It is an opt-in research helper, not an upstream AeoLiS fix. Callers pass its result as `z0` when constructing `WindShear`:
+
+```python
+z0_for_fft = scalar_fft_roughness(z0, ridge.shape)
+```
+
+| Input | Prototype behavior |
+|---|---|
+| Positive finite scalar | Preserve its value |
+| Exactly uniform array matching the terrain | Convert to the identical scalar |
+| Varying array | Raise a descriptive `NotImplementedError` |
+| Wrong shape, nonpositive, nonfinite or non-real input | Raise `ValueError` |
+
+Exact equality is deliberate: even a small variation is rejected rather than silently averaged. For a uniform field, conversion preserves all roughness information and uses the original scalar solver. Varying roughness remains unsupported; the prototype supplies no predictions for it. Positive roughness alone also does not guarantee validity of all logarithms or physical assumptions in the transfer formula.
+
+Run the [six tests](../07_reproducibility/scripts/test_b01_roughness_guard.py) from the repository root after setting `PYTHONPATH` and `MPLCONFIGDIR` as above:
+
+```powershell
+.venv/Scripts/python.exe -m unittest discover -s AeoLiS_Investigation/07_reproducibility/scripts -p test_b01_roughness_guard.py -v
+```
+
+The tests compare the guarded uniform-grid result with the original scalar FFT result for both stress components, and cover varying grids, very small variations, wrong shapes and invalid values. Passing these checks establishes the prototype's input behavior and scalar equivalence. Integration into the full model and validation of heterogeneous roughness remain future work.
