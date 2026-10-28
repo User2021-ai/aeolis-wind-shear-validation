@@ -1,0 +1,42 @@
+{
+  "scope": "Direct unfiltered FFT operator; no full time integration or CFD validation",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "shear_source_sha256": "84768d9ac76be976c1d20402eccda60927c4abf9d75e4570bc856cfa39253141",
+  "cases": {
+    "scalar": {
+      "status": "finite",
+      "along_wind_rms": 1.294388487969446,
+      "transverse_rms": 0.0
+    },
+    "uniform_array": {
+      "status": "exception",
+      "type": "ValueError",
+      "message": "operands could not be broadcast together with shapes (4032,) (64,64)",
+      "location": [
+        {
+          "file": "shear.py",
+          "line": 607,
+          "function": "compute_shear",
+          "statement": "sigma_v = np.sqrt(1j * L * kx_v * z0_v / l)"
+        }
+      ]
+    },
+    "variable_array": {
+      "status": "exception",
+      "type": "ValueError",
+      "message": "operands could not be broadcast together with shapes (4032,) (64,64)",
+      "location": [
+        {
+          "file": "shear.py",
+          "line": 607,
+          "function": "compute_shear",
+          "statement": "sigma_v = np.sqrt(1j * L * kx_v * z0_v / l)"
+        }
+      ]
+    }
+  },
+  "audited_failure_reproduced": true,
+  "exit_code_meaning": "Zero confirms the known failure was reproduced; it does not mean B01 is fixed."
+}

@@ -45,6 +45,12 @@ Inspect `spatially_variable_roughness` in the generated JSON. A scalar-roughness
 The reproducer constructs a `64 x 64` periodic sinusoidal ridge and supplies a spatial roughness field:
 
 ```python
+import numpy as np
+from aeolis.shear import WindShear
+
+x, y = np.meshgrid(np.arange(64, dtype=float), np.arange(64, dtype=float))
+wavelength = 16.0
+ridge = 0.5 * np.cos(2.0 * np.pi * x / wavelength)
 z0_field = 1.0e-3 * (
     1.0 + 0.25 * np.cos(2.0 * np.pi * x / wavelength)
 )
@@ -60,6 +66,7 @@ model = WindShear(
 )
 model.igrid = {"x": x, "y": y, "z": ridge}
 model.cgrid.update({"x": x, "y": y, "z": ridge.copy()})
+model.x0, model.y0 = float(x.mean()), float(y.mean())
 model.compute_shear(u0=10.0, nfilter=None)
 ```
 
@@ -139,3 +146,31 @@ Represent heterogeneous roughness through an internal-boundary-layer or other no
 ## Suggested upstream communication
 
 Open a focused issue before proposing a numerical implementation. Ask maintainers which behavior was intended for adaptive roughness with the FFT method and whether an effective scalar approximation exists in prior AeoLiS studies. Link the minimal reproducer and avoid presenting shape-only indexing as a valid fix.
+
+## Focused B01 experiment (28 October 2026)
+
+The [dedicated reproducer](../07_reproducibility/scripts/b01_roughness_reproducer.py) compares three representations on the same terrain: scalar roughness, a uniform array containing that same value, and a spatially varying array. It records the exception location, Python/NumPy/SciPy versions, and a SHA-256 fingerprint of the actual shear source file.
+
+To reproduce against the local audited checkout from the research repository root:
+
+```powershell
+$env:PYTHONPATH = (Resolve-Path 'source/aeolis-python').Path
+$env:MPLCONFIGDIR = Join-Path $env:TEMP 'aeolis-b01-mpl'
+.venv/Scripts/python.exe AeoLiS_Investigation/07_reproducibility/scripts/b01_roughness_reproducer.py --output AeoLiS_Investigation/07_reproducibility/results/b01_roughness_results.json
+```
+
+This assumes the project dependencies have been installed in `.venv`. The local checkout is excluded from Git; other researchers can clone the upstream repository there and check out the audited commit listed above. Alternatively, omit `PYTHONPATH` to test their installed package, whose source fingerprint may differ.
+
+The script exits successfully only if the scalar control is finite and both array cases reproduce the specific broadcasting error inside `compute_shear`. A successful run therefore confirms the known defect. It does not certify that the software is fixed. An unexpected outcome causes a nonzero exit and should be investigated.
+
+Observed results against the clean audited checkout:
+
+| Roughness input | Result |
+|---|---|
+| Scalar `0.001 m` | Finite shear output |
+| Uniform `64 x 64` array, every value `0.001 m` | Broadcasting exception at `shear.py:607` |
+| Varying `64 x 64` array, range `0.00075–0.00125 m` | Same exception at `shear.py:607` |
+
+The [saved evidence](../07_reproducibility/results/b01_roughness_results.json) confirms that array representation alone is sufficient to trigger B01. Even a physically homogeneous roughness field fails when represented as a two-dimensional array. These are direct operator tests; full adaptive model runs remain a separate integration test.
+
+For a future correction, a uniform field can be reduced to its identical scalar value without losing spatial information. A varying field requires an explicit modelling decision. This distinction should guide the eventual interface design; the present experiment does not modify the upstream solver.
