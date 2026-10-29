@@ -199,3 +199,11 @@ Run the [six tests](../07_reproducibility/scripts/test_b01_roughness_guard.py) f
 ```
 
 The tests compare the guarded uniform-grid result with the original scalar FFT result for both stress components, and cover varying grids, very small variations, wrong shapes and invalid values. Passing these checks establishes the prototype's input behavior and scalar equivalence. Integration into the full model and validation of heterogeneous roughness remain future work.
+
+## Automated verification (30 October 2026)
+
+The `b01-roughness` job in [the reproducibility workflow](../../.github/workflows/reproducibility.yml) checks out the exact audited AeoLiS commit and verifies that Python imports that checkout. On pushes and pull requests it then runs the three-case failure reproducer and the six safeguard tests. The safeguard tests still run if failure reproduction changes, provided the source verification succeeded.
+
+The job saves the reproduction JSON and installed dependency versions as a `b01-evidence` artifact for 30 days. Dependencies other than AeoLiS are not fully locked; the environment record helps diagnose changes between runs. The committed local JSON remains a separate dated record.
+
+A green B01 job means the known upstream failure was reproduced and the opt-in safeguard passed its tests. It does not mean heterogeneous roughness is physically validated or the safeguard is integrated into the upstream model. The older `shear-sanity` job only runs the diagnostic script and does not assert every reported result; its success alone must not be interpreted as proof that all checks passed.
