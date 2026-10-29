@@ -11,7 +11,7 @@ jobs:
       contents: read
     env:
       PYTHONPATH: ${{ github.workspace }}/source/aeolis-python
-      MPLCONFIGDIR: ${{ runner.temp }}/b01-matplotlib
+      MPLCONFIGDIR: /tmp/b01-matplotlib
     steps:
       - uses: actions/checkout@v4
       - name: Check out audited AeoLiS source
