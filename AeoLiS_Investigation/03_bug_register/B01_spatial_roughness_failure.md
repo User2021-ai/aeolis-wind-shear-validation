@@ -1,5 +1,7 @@
 # B01: spatially variable roughness crashes the FFT shear operator
 
+Follow-up: [roughness lifecycle and integration plan](B01_integration_plan.md), including the controlled test for stale FFT roughness during updates.
+
 ## Classification
 
 - Status: **confirmed and reproducible**
