@@ -1,0 +1,137 @@
+diff --git a/aeolis/shear.py b/aeolis/shear.py
+index 5b2ae4e..99c55b9 100644
+--- a/aeolis/shear.py
++++ b/aeolis/shear.py
+@@ -44,6 +44,28 @@ from aeolis.utils import *
+ logger = logging.getLogger(__name__)
+ 
+ 
++def scalar_fft_roughness(z0, grid_shape):
++    """Return scalar roughness for the spatially uniform FFT formulation.
++
++    Exactly uniform fields are equivalent to a scalar. Spatial variation is
++    unsupported; never silently average it or pair spatial cells with modes.
++    """
++    values = np.asarray(z0)
++    if values.dtype.kind not in 'iuf':
++        raise ValueError('FFT roughness must contain real numeric values in metres.')
++    if values.ndim != 0 and values.shape != tuple(grid_shape):
++        raise ValueError('FFT roughness array must match the terrain grid shape.')
++    if values.size == 0 or not np.all(np.isfinite(values)) or np.any(values <= 0):
++        raise ValueError('FFT roughness must be finite and strictly positive.')
++    first = values.flat[0]
++    if not np.all(values == first):
++        raise NotImplementedError(
++            'Spatially varying roughness is unsupported by the FFT shear method. '
++            'Use scalar or exactly uniform roughness; no averaging is applied.'
++        )
++    return float(first)
++
++
+ class WindShear:
+     '''Class for computation of 2DH wind shear perturbations over a topography.
+         
+@@ -139,7 +161,8 @@ class WindShear:
+         # Setting shear perturbation settings                  
+         self.L = L
+         self.l = l
+-        self.z0 = z0
++        self._roughness_grid_shape = z.shape
++        self.z0 = scalar_fft_roughness(z0, z.shape)
+        
+ 
+     def __call__(self, x, y, z, taux, tauy, u0, udir, 
+@@ -535,8 +558,8 @@ class WindShear:
+ 
+         '''
+         gc = self.cgrid
+-        gi = self.igrid # initial grid
+-
++        # Validate even on zero-wind calls and after direct attribute updates.
++        self.z0 = scalar_fft_roughness(self.z0, self._roughness_grid_shape)
+         
+         if u0 == 0.:
+             self.cgrid['dtaux'] = np.zeros(gc['z'].shape)
+@@ -557,22 +580,16 @@ class WindShear:
+         # Inner layer height
+         l  = self.l    
+  
+-        # interpolate roughness length z0 to computational grid
+-        if np.size(z0)>1:
+-            z0new = self.interpolate(gi['x'], gi['y'], z0, gc['x'], gc['y'], 0)
+-        else:
+-            z0new = z0
+-
+         for i in range(5):
+-            l = 2 * 0.41**2 * L /np.log(l/z0new)
++            l = 2 * 0.41**2 * L /np.log(l/z0)
+         
+         # Middle layer height
+         hm = 1.0
+         for i in range(5):
+-            hm = L / np.sqrt(np.log(hm/z0new))
++            hm = L / np.sqrt(np.log(hm/z0))
+             
+         # Non-dimensional velocity    
+-        ul = np.log(l/z0new) / np.log(hm/z0new)
++        ul = np.log(l/z0) / np.log(hm/z0)
+ 
+         # Arrays in Fourier 
+         k = np.sqrt(kx**2 + ky**2)
+@@ -597,21 +614,15 @@ class WindShear:
+             ky_v = ky[valid]
+             hs_v = hs[valid]
+ 
+-            # z0new can be scalar or array; index accordingly
+-            if np.size(z0new) == 1:
+-                z0_v = z0new
+-            else:
+-                z0_v = z0new[valid]
+-
+             # compute sigma on valid modes
+-            sigma_v = np.sqrt(1j * L * kx_v * z0_v / l)
++            sigma_v = np.sqrt(1j * L * kx_v * z0 / l)
+ 
+             # Evaluate Bessel K functions on valid arguments only
+             kv0 = sc_kv(0., 2. * sigma_v)
+             kv1 = sc_kv(1., 2. * sigma_v)
+ 
+             # main x-direction perturbation (vectorized on valid indices)
+-            term_x = -1. + (2. * np.log(l / z0_v) + (k_v**2) / (kx_v**2)) * sigma_v * (kv1 / kv0)
++            term_x = -1. + (2. * np.log(l / z0) + (k_v**2) / (kx_v**2)) * sigma_v * (kv1 / kv0)
+             dtaux_v = hs_v * (kx_v**2) / k_v * 2. / ul**2 * term_x
+ 
+             # y-direction perturbation (also vectorized)
+diff --git a/aeolis/wind.py b/aeolis/wind.py
+index db82c03..d3fdca6 100644
+--- a/aeolis/wind.py
++++ b/aeolis/wind.py
+@@ -141,6 +141,10 @@ def interpolate(s, p, t):
+     z     = p['z']
+     z0    = calculate_z0(p, s)                                                                                                             
+     
++    if p['process_shear'] and p['ny'] > 0 and p['method_shear'] == 'fft':
++        z0 = aeolis.shear.scalar_fft_roughness(z0, s['zb'].shape)
++        s['shear'].z0 = z0
++
+     s['ustars'] = s['uws'] * kappa / np.log(z/z0)
+     s['ustarn'] = s['uwn'] * kappa / np.log(z/z0) 
+     s['ustar']  = np.hypot(s['ustars'], s['ustarn'])
+@@ -249,6 +253,10 @@ def shear(s,p):
+         s = stress_velocity(s, p)
+ 
+     elif 'shear' in s.keys() and p['process_shear'] and p['ny'] > 0:
++        if p['method_shear'] == 'fft':
++            # Also refresh for callers that invoke shear without interpolate.
++            s['shear'].z0 = aeolis.shear.scalar_fft_roughness(
++                calculate_z0(p, s), s['zb'].shape)
+         s['shear'](x=s['x'], y=s['y'], z=s['zb'],
+                    taux=s['taus'], tauy=s['taun'],
+                    u0=s['uw'][0,0], udir=s['udir'][0,0],
+@@ -1008,4 +1016,4 @@ def compute_shear_perturbation_kroy1D(x, y, z, tau, params):
+     ydata = y
+     tau_data = tau_update
+ 
+-    return tau_update
+\ No newline at end of file
++    return tau_update

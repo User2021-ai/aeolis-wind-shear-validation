@@ -1,0 +1,8 @@
+{
+  "scope": "Synthetic 12x8 grid, real initialize/update, three 0.1 s steps for equivalence",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "failure_details": []
+}
