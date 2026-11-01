@@ -23,6 +23,8 @@ This repository presents an independent, reproducible preliminary assessment of 
 
 ## Start here
 
+For a worked example, follow B01 from the original roughness failure to a patch tested through full model updates. [B01 case study](AeoLiS_Investigation/03_bug_register/B01_spatial_roughness_failure.md)
+
 - [Executive summary](AeoLiS_Investigation/report/executive_summary.md)
 - [Technical report](AeoLiS_Investigation/report/technical_report.md)
 - [Research questions and hypotheses](AeoLiS_Investigation/00_project_scope/research_questions.md)

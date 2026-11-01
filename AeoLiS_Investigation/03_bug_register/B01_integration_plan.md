@@ -1,4 +1,4 @@
-# B01: roughness lifecycle and integration requirements
+# B01 full-model integration and verification
 
 Audited source: AeoLiS commit `1fcbe86d173f964e6ee231c0ee917ca3a6cd3f5e`.
 Investigation date: 31 October 2026. Status: integrated and exercised in a separate local checkout of the audited revision. Upstream review remains pending.
@@ -36,7 +36,7 @@ $env:PYTHONPATH = (Resolve-Path source/aeolis-b01-review).Path
 .venv/Scripts/python.exe $test --reference tmp/b01-original.npz --output tmp/b01-full-model.json
 ```
 
-## Where roughness goes
+## Roughness flow in the original audited revision
 
 | Stage | Audited source | Behavior |
 |---|---|---|
@@ -69,23 +69,6 @@ The [result file](../07_reproducibility/results/b01_lifecycle_results.json) reco
 
 Observed on the audited checkout: log-law roughness changed from `0.001 m` to `0.002 m`, and friction velocity changed from `0.44515 m/s` to `0.48138 m/s`. The FFT object still held `0.001 m` after `wind.shear` completed. This confirms the mismatch for the controlled update path.
 
-## Proposed integration design
+## Remaining work
 
-1. Validate and normalize roughness before constructing the FFT object. Preserve scalar values; collapse exactly uniform fields; reject varying fields explicitly.
-2. During each wind update, compute the current roughness and apply the same validation before using it in the FFT branch. Share that calculated value where practical, avoiding duplicate adaptive calculations.
-3. Refresh the FFT object's scalar `z0` with the validated current value before its next calculation. Keep local log-law roughness semantics explicit.
-4. Restrict the safeguard to the two-dimensional FFT option. Other shear methods and runs with topographic shear disabled need their existing behavior preserved.
-5. Add defensive validation for direct `WindShear` callers so bypassing the model configuration does not reintroduce B01.
-
-Validation should happen before mutating the relevant wind state, so an unsupported update does not partly advance wind calculations. A later heterogeneous-roughness formulation needs a separate physical design; this safeguard must not silently average spatial variation.
-
-## Acceptance tests before calling integration complete
-
-- A scalar-roughness full run matches the original shear, transport, and bed evolution.
-- An exactly uniform adaptive field matches the equivalent scalar run for several updates.
-- A uniform roughness change updates both the log-law calculation and FFT object.
-- A field that becomes spatially varying is rejected clearly before the unsupported shear calculation.
-- Zero-wind steps, disabled shear, and non-FFT methods follow their intended paths.
-- Existing upstream tests and representative examples pass, with any changed behavior explained.
-
-The present lifecycle experiment covers real wind component calls, including rotated-grid shear, but does not call `model.update`, evolve sediment, or establish full-run equivalence. It supplies evidence needed to build those integration tests.
+The local integration checks cover the scalar and uniform-field behavior of the candidate patch. Upstream review, the four existing upstream test failures, and measurement of the extra adaptive calculation on production grids remain open. To support spatial variation, a future formulation would need to represent the wind adjustment across a roughness transition and compare its predicted stress with independent reference data.
