@@ -3,7 +3,7 @@
 | Case ID | Geometry | Flow regime | Purpose | Reference | Status |
 |---|---|---|---|---|---|
 | A00 | flat bed | attached | zero perturbation | analytical | local check passed |
-| A01 | 1-D sinusoid | attached | amplitude/phase and transverse zero | analytical transfer | partial local check |
+| A01 | 1-D sinusoid | attached | amplitude/phase and transverse zero | implemented analytical transfer | locally verified; physical validation pending |
 | A02 | oblique sinusoid | attached 3-D mode | vector transfer and rotation | analytical transfer | finite-output check only |
 | A03 | two wavelengths | attached | single-`L` limitation | analytical/CFD | planned |
 | A04 | translated Gaussian | attached | boundary/translation invariance | extended-domain spectral reference | planned |
