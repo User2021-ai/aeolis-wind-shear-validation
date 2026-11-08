@@ -1,5 +1,7 @@
 # Does the shear discrepancy increase with ridge steepness?
 
+The [subsequent grid and iteration study](ridge_grid_study.md) revisits these preliminary results. Its finest-grid discrepancy increase is about 55%, and it identifies remaining reference-wind drift and grid sensitivity. The 72% value below describes the original 3,000-iteration medium-grid comparison.
+
 At 32 m wavelength, compare cosine amplitudes of 0.64 and 1.28 m on the same 128 × 64 CFD grid. The OpenFOAM cases use the geometry, closure, lid and roughness in the [pilot protocol](ridge_cfd_findings.md). Each ridge uses the same bulk-speed target as the calibrated flat bed. The pressure gradient adjusts per case.
 
 AeoLiS prescribes 10 m/s at 10 m above the surface. On the original flat CFD mesh, average streamwise velocity horizontally at each cell-centre elevation and linearly interpolate to 10 m. At iteration 3,000 this gives 10.01773 m/s for a bulk target of 10 m/s. Multiplying that target by 10/10.01773 gives 9.98230 m/s. Rerun the flat control and both ridges from their initial fields; check the resulting flat-bed wind at the reference height.
