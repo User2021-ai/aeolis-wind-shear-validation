@@ -1,0 +1,897 @@
+{
+  "records": [
+    {
+      "original_nx": 64,
+      "reduced_nx": 2,
+      "vertical_cells": 32,
+      "series": [
+        {
+          "iteration": 1000,
+          "u10_m_s": 10.002511790584295,
+          "kinematic_wall_stress": 0.18740137985
+        },
+        {
+          "iteration": 2000,
+          "u10_m_s": 10.002512119415895,
+          "kinematic_wall_stress": 0.18740123105,
+          "relative_wall_change": 7.940176326737524e-07,
+          "max_velocity_profile_change_m_s": 2.575999999976375e-06
+        },
+        {
+          "iteration": 3000,
+          "u10_m_s": 10.002512108520401,
+          "kinematic_wall_stress": 0.18740121275,
+          "relative_wall_change": 9.765143970940688e-08,
+          "max_velocity_profile_change_m_s": 2.59000000113474e-07
+        },
+        {
+          "iteration": 4000,
+          "u10_m_s": 10.002512233694379,
+          "kinematic_wall_stress": 0.187401226,
+          "relative_wall_change": 7.07039181839151e-08,
+          "max_velocity_profile_change_m_s": 2.8999999912571184e-07
+        },
+        {
+          "iteration": 5000,
+          "u10_m_s": 10.002512356878368,
+          "kinematic_wall_stress": 0.1874012491,
+          "relative_wall_change": 1.232649352900597e-07,
+          "max_velocity_profile_change_m_s": 4.1000000017277216e-07
+        },
+        {
+          "iteration": 6000,
+          "u10_m_s": 10.002512325485373,
+          "kinematic_wall_stress": 0.1874012584,
+          "relative_wall_change": 4.9626136629253306e-08,
+          "max_velocity_profile_change_m_s": 1.1699999991066079e-07
+        },
+        {
+          "iteration": 7000,
+          "u10_m_s": 10.00251217110739,
+          "kinematic_wall_stress": 0.18740124025,
+          "relative_wall_change": 9.685100387210982e-08,
+          "max_velocity_profile_change_m_s": 3.599999995884673e-07
+        },
+        {
+          "iteration": 8000,
+          "u10_m_s": 10.002512098719398,
+          "kinematic_wall_stress": 0.1874012184,
+          "relative_wall_change": 1.1659474583444822e-07,
+          "max_velocity_profile_change_m_s": 3.610000005593861e-07
+        },
+        {
+          "iteration": 9000,
+          "u10_m_s": 10.002512171803888,
+          "kinematic_wall_stress": 0.1874012183,
+          "relative_wall_change": 5.336145043656615e-10,
+          "max_velocity_profile_change_m_s": 1.6999999985500835e-07
+        },
+        {
+          "iteration": 10000,
+          "u10_m_s": 10.002512334888376,
+          "kinematic_wall_stress": 0.1874012389,
+          "relative_wall_change": 1.0992457877530219e-07,
+          "max_velocity_profile_change_m_s": 3.7999999946691787e-07
+        },
+        {
+          "iteration": 11000,
+          "u10_m_s": 10.002512355286374,
+          "kinematic_wall_stress": 0.18740125825,
+          "relative_wall_change": 1.0325438685751596e-07,
+          "max_velocity_profile_change_m_s": 2.860000005711072e-07
+        },
+        {
+          "iteration": 12000,
+          "u10_m_s": 10.002512232798884,
+          "kinematic_wall_stress": 0.1874012482,
+          "relative_wall_change": 5.3628241841719115e-08,
+          "max_velocity_profile_change_m_s": 2.6999999924726126e-07
+        },
+        {
+          "iteration": 13000,
+          "u10_m_s": 10.002512098918398,
+          "kinematic_wall_stress": 0.1874012251,
+          "relative_wall_change": 1.232649206878007e-07,
+          "max_velocity_profile_change_m_s": 4.1599999978103597e-07
+        },
+        {
+          "iteration": 14000,
+          "u10_m_s": 10.002512119913394,
+          "kinematic_wall_stress": 0.1874012127,
+          "relative_wall_change": 6.61681906956984e-08,
+          "max_velocity_profile_change_m_s": 1.5800000063848074e-07
+        },
+        {
+          "iteration": 15000,
+          "u10_m_s": 10.002512273196883,
+          "kinematic_wall_stress": 0.1874012304,
+          "relative_wall_change": 9.444976229579681e-08,
+          "max_velocity_profile_change_m_s": 3.4000000148637355e-07
+        },
+        {
+          "iteration": 16000,
+          "u10_m_s": 10.00251235628137,
+          "kinematic_wall_stress": 0.1874012529,
+          "relative_wall_change": 1.200632458709555e-07,
+          "max_velocity_profile_change_m_s": 3.790000002723559e-07
+        },
+        {
+          "iteration": 17000,
+          "u10_m_s": 10.00251229369438,
+          "kinematic_wall_stress": 0.1874012549,
+          "relative_wall_change": 1.0672287233930697e-08,
+          "max_velocity_profile_change_m_s": 1.3999999914915406e-07
+        },
+        {
+          "iteration": 18000,
+          "u10_m_s": 10.002512125311393,
+          "kinematic_wall_stress": 0.1874012343,
+          "relative_wall_change": 1.0992455745482593e-07,
+          "max_velocity_profile_change_m_s": 3.900000002943216e-07
+        },
+        {
+          "iteration": 19000,
+          "u10_m_s": 10.002512099515396,
+          "kinematic_wall_stress": 0.1874012154,
+          "relative_wall_change": 1.0085312447422219e-07,
+          "max_velocity_profile_change_m_s": 2.949999995394137e-07
+        },
+        {
+          "iteration": 20000,
+          "u10_m_s": 10.002512202500386,
+          "kinematic_wall_stress": 0.18740122204999998,
+          "relative_wall_change": 3.548536214622627e-08,
+          "max_velocity_profile_change_m_s": 2.400000003177638e-07
+        },
+        {
+          "iteration": 21000,
+          "u10_m_s": 10.002512355485374,
+          "kinematic_wall_stress": 0.1874012444,
+          "relative_wall_change": 1.1926282962773936e-07,
+          "max_velocity_profile_change_m_s": 4.060000007299891e-07
+        },
+        {
+          "iteration": 22000,
+          "u10_m_s": 10.00251233648037,
+          "kinematic_wall_stress": 0.18740125955,
+          "relative_wall_change": 8.084257953046825e-08,
+          "max_velocity_profile_change_m_s": 2.0100000064360302e-07
+        },
+        {
+          "iteration": 23000,
+          "u10_m_s": 10.002512186803889,
+          "kinematic_wall_stress": 0.18740124265,
+          "relative_wall_change": 9.018082403029125e-08,
+          "max_velocity_profile_change_m_s": 3.499999987610636e-07
+        },
+        {
+          "iteration": 24000,
+          "u10_m_s": 10.002512098918398,
+          "kinematic_wall_stress": 0.1874012203,
+          "relative_wall_change": 1.1926281636971699e-07,
+          "max_velocity_profile_change_m_s": 3.800000003550963e-07
+        },
+        {
+          "iteration": 25000,
+          "u10_m_s": 10.002512160311394,
+          "kinematic_wall_stress": 0.1874012169,
+          "relative_wall_change": 1.814289148340997e-08,
+          "max_velocity_profile_change_m_s": 1.300000000981072e-07
+        },
+        {
+          "iteration": 26000,
+          "u10_m_s": 10.002512323893379,
+          "kinematic_wall_stress": 0.1874012364,
+          "relative_wall_change": 1.0405482059393099e-07,
+          "max_velocity_profile_change_m_s": 3.7999999946691787e-07
+        },
+        {
+          "iteration": 27000,
+          "u10_m_s": 10.002512355684372,
+          "kinematic_wall_stress": 0.18740125805,
+          "relative_wall_change": 1.1552751947167312e-07,
+          "max_velocity_profile_change_m_s": 3.1999999983156613e-07
+        },
+        {
+          "iteration": 28000,
+          "u10_m_s": 10.002512262898383,
+          "kinematic_wall_stress": 0.18740125145,
+          "relative_wall_change": 3.521854687450395e-08,
+          "max_velocity_profile_change_m_s": 2.2000000043931323e-07
+        },
+        {
+          "iteration": 29000,
+          "u10_m_s": 10.002512108719399,
+          "kinematic_wall_stress": 0.18740122985000002,
+          "relative_wall_change": 1.1526070298864911e-07,
+          "max_velocity_profile_change_m_s": 3.959999999025854e-07
+        },
+        {
+          "iteration": 30000,
+          "u10_m_s": 10.002512108520401,
+          "kinematic_wall_stress": 0.18740121215,
+          "relative_wall_change": 9.444975380034643e-08,
+          "max_velocity_profile_change_m_s": 2.459999999260276e-07
+        },
+        {
+          "iteration": 31000,
+          "u10_m_s": 10.000000009919553,
+          "kinematic_wall_stress": 0.1873071168,
+          "relative_wall_change": 0.0005021064107348128,
+          "max_velocity_profile_change_m_s": 0.002800139999999729
+        },
+        {
+          "iteration": 32000,
+          "u10_m_s": 10.000000223899539,
+          "kinematic_wall_stress": 0.18730714015,
+          "relative_wall_change": 1.2466157393277097e-07,
+          "max_velocity_profile_change_m_s": 3.7999999946691787e-07
+        },
+        {
+          "iteration": 33000,
+          "u10_m_s": 10.000000070118553,
+          "kinematic_wall_stress": 0.18730712205,
+          "relative_wall_change": 9.663272838560625e-08,
+          "max_velocity_profile_change_m_s": 3.499999987610636e-07
+        },
+        {
+          "iteration": 34000,
+          "u10_m_s": 9.999999987332563,
+          "kinematic_wall_stress": 0.1873070999,
+          "relative_wall_change": 1.182549801545639e-07,
+          "max_velocity_profile_change_m_s": 3.7399999985865406e-07
+        },
+        {
+          "iteration": 35000,
+          "u10_m_s": 10.000000049820054,
+          "kinematic_wall_stress": 0.1873070973,
+          "relative_wall_change": 1.3880947355804743e-08,
+          "max_velocity_profile_change_m_s": 1.4999999997655777e-07
+        },
+        {
+          "iteration": 36000,
+          "u10_m_s": 10.000000214496536,
+          "kinematic_wall_stress": 0.18730711885,
+          "relative_wall_change": 1.1505170021498248e-07,
+          "max_velocity_profile_change_m_s": 3.919999995716239e-07
+        },
+        {
+          "iteration": 37000,
+          "u10_m_s": 10.000000244496537,
+          "kinematic_wall_stress": 0.18730714055,
+          "relative_wall_change": 1.1585251070319175e-07,
+          "max_velocity_profile_change_m_s": 3.069999996441197e-07
+        },
+        {
+          "iteration": 38000,
+          "u10_m_s": 10.000000131312548,
+          "kinematic_wall_stress": 0.1873071296,
+          "relative_wall_change": 5.846013108694092e-08,
+          "max_velocity_profile_change_m_s": 2.600000001962144e-07
+        },
+        {
+          "iteration": 39000,
+          "u10_m_s": 9.999999988924557,
+          "kinematic_wall_stress": 0.1873071087,
+          "relative_wall_change": 1.1158144408630169e-07,
+          "max_velocity_profile_change_m_s": 3.82999999715139e-07
+        },
+        {
+          "iteration": 40000,
+          "u10_m_s": 9.99999999852656,
+          "kinematic_wall_stress": 0.18730709225,
+          "relative_wall_change": 8.782368226826352e-08,
+          "max_velocity_profile_change_m_s": 2.170000001910921e-07
+        }
+      ],
+      "stable_last_two_windows": true,
+      "reference_wind_within_half_percent": true,
+      "calibration": {
+        "settled_u10": 10.002512108520401,
+        "old_bulk": 10.1777117498,
+        "new_bulk": 10.175155640281965
+      }
+    },
+    {
+      "original_nx": 128,
+      "reduced_nx": 2,
+      "vertical_cells": 64,
+      "series": [
+        {
+          "iteration": 1000,
+          "u10_m_s": 10.083473477264388,
+          "kinematic_wall_stress": 0.19095673475
+        },
+        {
+          "iteration": 2000,
+          "u10_m_s": 10.07681263672686,
+          "kinematic_wall_stress": 0.1904220705,
+          "relative_wall_change": 0.002799923504661745,
+          "max_velocity_profile_change_m_s": 0.014248019000000056
+        },
+        {
+          "iteration": 3000,
+          "u10_m_s": 10.077577382165174,
+          "kinematic_wall_stress": 0.19045260695,
+          "relative_wall_change": 0.00016036192611391335,
+          "max_velocity_profile_change_m_s": 0.0013179709999988631
+        },
+        {
+          "iteration": 4000,
+          "u10_m_s": 10.077506209274405,
+          "kinematic_wall_stress": 0.19045382789999998,
+          "relative_wall_change": 6.410781241299048e-06,
+          "max_velocity_profile_change_m_s": 0.00010071999999894388
+        },
+        {
+          "iteration": 5000,
+          "u10_m_s": 10.07751093828686,
+          "kinematic_wall_stress": 0.1904531685,
+          "relative_wall_change": 3.4622564810709118e-06,
+          "max_velocity_profile_change_m_s": 1.0243000000187408e-05
+        },
+        {
+          "iteration": 6000,
+          "u10_m_s": 10.07751049828686,
+          "kinematic_wall_stress": 0.19045317515,
+          "relative_wall_change": 3.491672019681812e-08,
+          "max_velocity_profile_change_m_s": 4.999999987376214e-07
+        },
+        {
+          "iteration": 7000,
+          "u10_m_s": 10.077510478286861,
+          "kinematic_wall_stress": 0.1904531799,
+          "relative_wall_change": 2.494051359709612e-08,
+          "max_velocity_profile_change_m_s": 7.20000006282362e-08
+        },
+        {
+          "iteration": 8000,
+          "u10_m_s": 10.07751052828686,
+          "kinematic_wall_stress": 0.1904531916,
+          "relative_wall_change": 6.143242135815447e-08,
+          "max_velocity_profile_change_m_s": 2.2200000060479397e-07
+        },
+        {
+          "iteration": 9000,
+          "u10_m_s": 10.077510590861849,
+          "kinematic_wall_stress": 0.1904532073,
+          "relative_wall_change": 8.243495365119072e-08,
+          "max_velocity_profile_change_m_s": 2.770000007146223e-07
+        },
+        {
+          "iteration": 10000,
+          "u10_m_s": 10.077510670861848,
+          "kinematic_wall_stress": 0.1904532243,
+          "relative_wall_change": 8.926077030707978e-08,
+          "max_velocity_profile_change_m_s": 2.8800000073658794e-07
+        },
+        {
+          "iteration": 11000,
+          "u10_m_s": 10.077510742149341,
+          "kinematic_wall_stress": 0.1904532407,
+          "relative_wall_change": 8.61103825214624e-08,
+          "max_velocity_profile_change_m_s": 2.860000005711072e-07
+        },
+        {
+          "iteration": 12000,
+          "u10_m_s": 10.077510802149341,
+          "kinematic_wall_stress": 0.1904532574,
+          "relative_wall_change": 8.768556487989136e-08,
+          "max_velocity_profile_change_m_s": 2.9700000059307285e-07
+        },
+        {
+          "iteration": 13000,
+          "u10_m_s": 10.07751082214934,
+          "kinematic_wall_stress": 0.1904532694,
+          "relative_wall_change": 6.300758614086748e-08,
+          "max_velocity_profile_change_m_s": 1.7400000018596984e-07
+        },
+        {
+          "iteration": 14000,
+          "u10_m_s": 10.07751083214934,
+          "kinematic_wall_stress": 0.1904532796,
+          "relative_wall_change": 5.355644466310716e-08,
+          "max_velocity_profile_change_m_s": 1.4000000003733248e-07
+        },
+        {
+          "iteration": 15000,
+          "u10_m_s": 10.077510823436835,
+          "kinematic_wall_stress": 0.19045328914999998,
+          "relative_wall_change": 5.0143531291854164e-08,
+          "max_velocity_profile_change_m_s": 1.0200000044591206e-07
+        },
+        {
+          "iteration": 16000,
+          "u10_m_s": 10.077510810861847,
+          "kinematic_wall_stress": 0.1904532845,
+          "relative_wall_change": 2.441543549558943e-08,
+          "max_velocity_profile_change_m_s": 7.20000006282362e-08
+        },
+        {
+          "iteration": 17000,
+          "u10_m_s": 10.077510750861848,
+          "kinematic_wall_stress": 0.190453274,
+          "relative_wall_change": 5.513162982807722e-08,
+          "max_velocity_profile_change_m_s": 2.109999996946499e-07
+        },
+        {
+          "iteration": 18000,
+          "u10_m_s": 10.077510689574353,
+          "kinematic_wall_stress": 0.19045325955,
+          "relative_wall_change": 7.587162824047126e-08,
+          "max_velocity_profile_change_m_s": 2.569999999479933e-07
+        },
+        {
+          "iteration": 19000,
+          "u10_m_s": 10.07751061828686,
+          "kinematic_wall_stress": 0.19045324285,
+          "relative_wall_change": 8.768555620126384e-08,
+          "max_velocity_profile_change_m_s": 2.849999996001884e-07
+        },
+        {
+          "iteration": 20000,
+          "u10_m_s": 10.07751053828686,
+          "kinematic_wall_stress": 0.1904532262,
+          "relative_wall_change": 8.742303238552585e-08,
+          "max_velocity_profile_change_m_s": 2.859999996829288e-07
+        },
+        {
+          "iteration": 21000,
+          "u10_m_s": 10.077510476999366,
+          "kinematic_wall_stress": 0.1904532102,
+          "relative_wall_change": 8.401012842269356e-08,
+          "max_velocity_profile_change_m_s": 2.8000000007466497e-07
+        },
+        {
+          "iteration": 22000,
+          "u10_m_s": 10.077510438286861,
+          "kinematic_wall_stress": 0.1904531952,
+          "relative_wall_change": 7.87595020128711e-08,
+          "max_velocity_profile_change_m_s": 2.4199999959506613e-07
+        },
+        {
+          "iteration": 23000,
+          "u10_m_s": 10.07751042828686,
+          "kinematic_wall_stress": 0.1904531847,
+          "relative_wall_change": 5.5131655824018704e-08,
+          "max_velocity_profile_change_m_s": 1.4400000036829397e-07
+        },
+        {
+          "iteration": 24000,
+          "u10_m_s": 10.077510426999368,
+          "kinematic_wall_stress": 0.19045317485000002,
+          "relative_wall_change": 5.171874651422086e-08,
+          "max_velocity_profile_change_m_s": 1.2499999968440534e-07
+        },
+        {
+          "iteration": 25000,
+          "u10_m_s": 10.077510438286861,
+          "kinematic_wall_stress": 0.19045317405,
+          "relative_wall_change": 4.200507611969303e-09,
+          "max_velocity_profile_change_m_s": 5.200000074978561e-08
+        },
+        {
+          "iteration": 26000,
+          "u10_m_s": 10.07751048828686,
+          "kinematic_wall_stress": 0.190453184,
+          "relative_wall_change": 5.224381289643003e-08,
+          "max_velocity_profile_change_m_s": 1.6700000049496566e-07
+        },
+        {
+          "iteration": 27000,
+          "u10_m_s": 10.077510549574352,
+          "kinematic_wall_stress": 0.1904531964,
+          "relative_wall_change": 6.510786398312092e-08,
+          "max_velocity_profile_change_m_s": 2.490000001742487e-07
+        },
+        {
+          "iteration": 28000,
+          "u10_m_s": 10.077510620861847,
+          "kinematic_wall_stress": 0.1904532127,
+          "relative_wall_change": 8.558533185321965e-08,
+          "max_velocity_profile_change_m_s": 2.8400000040562645e-07
+        },
+        {
+          "iteration": 29000,
+          "u10_m_s": 10.07751069214934,
+          "kinematic_wall_stress": 0.1904532293,
+          "relative_wall_change": 8.716051438764403e-08,
+          "max_velocity_profile_change_m_s": 2.8400000040562645e-07
+        },
+        {
+          "iteration": 30000,
+          "u10_m_s": 10.077510762149341,
+          "kinematic_wall_stress": 0.1904532456,
+          "relative_wall_change": 8.558531692297665e-08,
+          "max_velocity_profile_change_m_s": 2.8699999976566914e-07
+        },
+        {
+          "iteration": 31000,
+          "u10_m_s": 9.997720230836707,
+          "kinematic_wall_stress": 0.18738805245,
+          "relative_wall_change": 0.016094202754820257,
+          "max_velocity_profile_change_m_s": 0.08241337000000115
+        },
+        {
+          "iteration": 32000,
+          "u10_m_s": 10.00024402083404,
+          "kinematic_wall_stress": 0.18753998475,
+          "relative_wall_change": 0.0008107896849001622,
+          "max_velocity_profile_change_m_s": 0.004846991000000855
+        },
+        {
+          "iteration": 33000,
+          "u10_m_s": 9.999979849540377,
+          "kinematic_wall_stress": 0.18753587715,
+          "relative_wall_change": 2.1902529241819855e-05,
+          "max_velocity_profile_change_m_s": 0.0004138400000002207
+        },
+        {
+          "iteration": 34000,
+          "u10_m_s": 10.000000708762276,
+          "kinematic_wall_stress": 0.1875344458,
+          "relative_wall_change": 7.632406245406195e-06,
+          "max_velocity_profile_change_m_s": 2.4600000001484545e-05
+        },
+        {
+          "iteration": 35000,
+          "u10_m_s": 9.99999953693786,
+          "kinematic_wall_stress": 0.18753476205,
+          "relative_wall_change": 1.686356864436552e-06,
+          "max_velocity_profile_change_m_s": 5.386999999856812e-06
+        },
+        {
+          "iteration": 36000,
+          "u10_m_s": 9.999999910027846,
+          "kinematic_wall_stress": 0.18753480225,
+          "relative_wall_change": 2.143602580985803e-07,
+          "max_velocity_profile_change_m_s": 6.700000003689865e-07
+        },
+        {
+          "iteration": 37000,
+          "u10_m_s": 10.00000003105784,
+          "kinematic_wall_stress": 0.1875348146,
+          "relative_wall_change": 6.585444326447564e-08,
+          "max_velocity_profile_change_m_s": 2.299999994903601e-07
+        },
+        {
+          "iteration": 38000,
+          "u10_m_s": 10.000000050542843,
+          "kinematic_wall_stress": 0.1875348227,
+          "relative_wall_change": 4.3191980226924707e-08,
+          "max_velocity_profile_change_m_s": 1.1200000038513735e-07
+        },
+        {
+          "iteration": 39000,
+          "u10_m_s": 10.000000031186591,
+          "kinematic_wall_stress": 0.18753482445,
+          "relative_wall_change": 9.331600290668424e-09,
+          "max_velocity_profile_change_m_s": 5.700000027530905e-08
+        },
+        {
+          "iteration": 40000,
+          "u10_m_s": 9.99999998983472,
+          "kinematic_wall_stress": 0.1875348148,
+          "relative_wall_change": 5.145710948264834e-08,
+          "max_velocity_profile_change_m_s": 1.7300000010322947e-07
+        }
+      ],
+      "stable_last_two_windows": true,
+      "reference_wind_within_half_percent": true,
+      "calibration": {
+        "settled_u10": 10.077510762149341,
+        "old_bulk": 10.2521201528,
+        "new_bulk": 10.173266389658927
+      }
+    },
+    {
+      "original_nx": 256,
+      "reduced_nx": 2,
+      "vertical_cells": 128,
+      "series": [
+        {
+          "iteration": 1000,
+          "u10_m_s": 9.598806451930413,
+          "kinematic_wall_stress": 0.16662707235000002
+        },
+        {
+          "iteration": 2000,
+          "u10_m_s": 9.619835057257196,
+          "kinematic_wall_stress": 0.17183893335,
+          "relative_wall_change": 0.031278596727982326,
+          "max_velocity_profile_change_m_s": 0.08593489800000054
+        },
+        {
+          "iteration": 3000,
+          "u10_m_s": 9.64183089898611,
+          "kinematic_wall_stress": 0.17581418259999998,
+          "relative_wall_change": 0.02313357731279225,
+          "max_velocity_profile_change_m_s": 0.08545621699999995
+        },
+        {
+          "iteration": 4000,
+          "u10_m_s": 9.658412045589907,
+          "kinematic_wall_stress": 0.17647549810000002,
+          "relative_wall_change": 0.0037614456935173165,
+          "max_velocity_profile_change_m_s": 0.03211491399999922
+        },
+        {
+          "iteration": 5000,
+          "u10_m_s": 9.661871443508137,
+          "kinematic_wall_stress": 0.17571854409999998,
+          "relative_wall_change": 0.0042892866610361015,
+          "max_velocity_profile_change_m_s": 0.012350835999999532
+        },
+        {
+          "iteration": 6000,
+          "u10_m_s": 9.658204873000205,
+          "kinematic_wall_stress": 0.17495592570000001,
+          "relative_wall_change": 0.0043399995367931704,
+          "max_velocity_profile_change_m_s": 0.01529855699999949
+        },
+        {
+          "iteration": 7000,
+          "u10_m_s": 9.654614934441605,
+          "kinematic_wall_stress": 0.17468553175,
+          "relative_wall_change": 0.001545497524123031,
+          "max_velocity_profile_change_m_s": 0.007920366999998762
+        },
+        {
+          "iteration": 8000,
+          "u10_m_s": 9.653449837783857,
+          "kinematic_wall_stress": 0.17475910584999998,
+          "relative_wall_change": 0.0004211802732768304,
+          "max_velocity_profile_change_m_s": 0.0014325219999999916
+        },
+        {
+          "iteration": 9000,
+          "u10_m_s": 9.65384405072846,
+          "kinematic_wall_stress": 0.17489760565,
+          "relative_wall_change": 0.0007925183602100974,
+          "max_velocity_profile_change_m_s": 0.002598371000000377
+        },
+        {
+          "iteration": 10000,
+          "u10_m_s": 9.654491518244752,
+          "kinematic_wall_stress": 0.1749655572,
+          "relative_wall_change": 0.00038852189969932,
+          "max_velocity_profile_change_m_s": 0.001682474999999961
+        },
+        {
+          "iteration": 11000,
+          "u10_m_s": 9.654795958765634,
+          "kinematic_wall_stress": 0.17496524115,
+          "relative_wall_change": 1.8063555196927754e-06,
+          "max_velocity_profile_change_m_s": 0.0004662749999990723
+        },
+        {
+          "iteration": 12000,
+          "u10_m_s": 9.654784301936974,
+          "kinematic_wall_stress": 0.174942432,
+          "relative_wall_change": 0.0001303638931371665,
+          "max_velocity_profile_change_m_s": 0.00040222699999947764
+        },
+        {
+          "iteration": 13000,
+          "u10_m_s": 9.654676556210482,
+          "kinematic_wall_stress": 0.1749272907,
+          "relative_wall_change": 8.655018583496722e-05,
+          "max_velocity_profile_change_m_s": 0.0003356740000004521
+        },
+        {
+          "iteration": 14000,
+          "u10_m_s": 9.654608853334958,
+          "kinematic_wall_stress": 0.1749248701,
+          "relative_wall_change": 1.3837749331797709e-05,
+          "max_velocity_profile_change_m_s": 0.00012365000000080784
+        },
+        {
+          "iteration": 15000,
+          "u10_m_s": 9.65459916982849,
+          "kinematic_wall_stress": 0.17492821674999998,
+          "relative_wall_change": 1.913192788465409e-05,
+          "max_velocity_profile_change_m_s": 5.532600000002219e-05
+        },
+        {
+          "iteration": 16000,
+          "u10_m_s": 9.654614850782394,
+          "kinematic_wall_stress": 0.17493128354999998,
+          "relative_wall_change": 1.753176278238541e-05,
+          "max_velocity_profile_change_m_s": 6.306700000013876e-05
+        },
+        {
+          "iteration": 17000,
+          "u10_m_s": 9.65462714125658,
+          "kinematic_wall_stress": 0.1749319784,
+          "relative_wall_change": 3.972131147209831e-06,
+          "max_velocity_profile_change_m_s": 2.6345000000205232e-05
+        },
+        {
+          "iteration": 18000,
+          "u10_m_s": 9.654630567753863,
+          "kinematic_wall_stress": 0.17493152174999999,
+          "relative_wall_change": 2.6104432373357987e-06,
+          "max_velocity_profile_change_m_s": 7.131000000271115e-06
+        },
+        {
+          "iteration": 19000,
+          "u10_m_s": 9.654629182259391,
+          "kinematic_wall_stress": 0.1749310119,
+          "relative_wall_change": 2.9145690547718755e-06,
+          "max_velocity_profile_change_m_s": 9.562999999879196e-06
+        },
+        {
+          "iteration": 20000,
+          "u10_m_s": 9.654628015762972,
+          "kinematic_wall_stress": 0.17493092155,
+          "relative_wall_change": 5.164893234210298e-07,
+          "max_velocity_profile_change_m_s": 4.1590000003921546e-06
+        },
+        {
+          "iteration": 21000,
+          "u10_m_s": 9.654627753763386,
+          "kinematic_wall_stress": 0.1749311105,
+          "relative_wall_change": 1.0801406538388436e-06,
+          "max_velocity_profile_change_m_s": 3.031999999514312e-06
+        },
+        {
+          "iteration": 22000,
+          "u10_m_s": 9.654628576761773,
+          "kinematic_wall_stress": 0.1749312248,
+          "relative_wall_change": 6.534000709972553e-07,
+          "max_velocity_profile_change_m_s": 2.5590000003461455e-06
+        },
+        {
+          "iteration": 23000,
+          "u10_m_s": 9.65462751526269,
+          "kinematic_wall_stress": 0.1749310298,
+          "relative_wall_change": 1.114723802061797e-06,
+          "max_velocity_profile_change_m_s": 2.9110000001608682e-06
+        },
+        {
+          "iteration": 24000,
+          "u10_m_s": 9.654626850764696,
+          "kinematic_wall_stress": 0.1749308558,
+          "relative_wall_change": 9.946777320788447e-07,
+          "max_velocity_profile_change_m_s": 3.2939999998760072e-06
+        },
+        {
+          "iteration": 25000,
+          "u10_m_s": 9.654627116764397,
+          "kinematic_wall_stress": 0.1749310526,
+          "relative_wall_change": 1.1250159332427053e-06,
+          "max_velocity_profile_change_m_s": 2.9479999996695483e-06
+        },
+        {
+          "iteration": 26000,
+          "u10_m_s": 9.65462766476271,
+          "kinematic_wall_stress": 0.17493119425,
+          "relative_wall_change": 8.097475999942656e-07,
+          "max_velocity_profile_change_m_s": 2.8659999999902652e-06
+        },
+        {
+          "iteration": 27000,
+          "u10_m_s": 9.654627137763235,
+          "kinematic_wall_stress": 0.17493100455,
+          "relative_wall_change": 1.0844263701923943e-06,
+          "max_velocity_profile_change_m_s": 2.8639999998247845e-06
+        },
+        {
+          "iteration": 28000,
+          "u10_m_s": 9.654626503765071,
+          "kinematic_wall_stress": 0.17493084069999998,
+          "relative_wall_change": 9.36654999688498e-07,
+          "max_velocity_profile_change_m_s": 3.06799999982843e-06
+        },
+        {
+          "iteration": 29000,
+          "u10_m_s": 9.654626955764622,
+          "kinematic_wall_stress": 0.1749310359,
+          "relative_wall_change": 1.115869558757177e-06,
+          "max_velocity_profile_change_m_s": 2.907999999912647e-06
+        },
+        {
+          "iteration": 30000,
+          "u10_m_s": 9.654627472762934,
+          "kinematic_wall_stress": 0.17493118975,
+          "relative_wall_change": 8.794894467883093e-07,
+          "max_velocity_profile_change_m_s": 2.910000000078128e-06
+        },
+        {
+          "iteration": 31000,
+          "u10_m_s": 9.974173766541092,
+          "kinematic_wall_stress": 0.1871100217,
+          "relative_wall_change": 0.0696207003874219,
+          "max_velocity_profile_change_m_s": 0.42895897000000005
+        },
+        {
+          "iteration": 32000,
+          "u10_m_s": 9.999808823097688,
+          "kinematic_wall_stress": 0.19093562295,
+          "relative_wall_change": 0.020445731421771328,
+          "max_velocity_profile_change_m_s": 0.09601457700000005
+        },
+        {
+          "iteration": 33000,
+          "u10_m_s": 10.013379258922653,
+          "kinematic_wall_stress": 0.18982012375,
+          "relative_wall_change": 0.005842279103109506,
+          "max_velocity_profile_change_m_s": 0.017510352999998702
+        },
+        {
+          "iteration": 34000,
+          "u10_m_s": 10.00974076166898,
+          "kinematic_wall_stress": 0.18814202855,
+          "relative_wall_change": 0.00884044940466965,
+          "max_velocity_profile_change_m_s": 0.03038527400000035
+        },
+        {
+          "iteration": 35000,
+          "u10_m_s": 10.001857514594892,
+          "kinematic_wall_stress": 0.1872749838,
+          "relative_wall_change": 0.004608458602696499,
+          "max_velocity_profile_change_m_s": 0.020376689999999087
+        },
+        {
+          "iteration": 36000,
+          "u10_m_s": 9.99807723166733,
+          "kinematic_wall_stress": 0.187248635,
+          "relative_wall_change": 0.00014069578042591875,
+          "max_velocity_profile_change_m_s": 0.005934529000001021
+        },
+        {
+          "iteration": 37000,
+          "u10_m_s": 9.998120176840805,
+          "kinematic_wall_stress": 0.18752144505,
+          "relative_wall_change": 0.0014569401266931337,
+          "max_velocity_profile_change_m_s": 0.004609914999999631
+        },
+        {
+          "iteration": 38000,
+          "u10_m_s": 9.999373159625787,
+          "kinematic_wall_stress": 0.18771037964999998,
+          "relative_wall_change": 0.0010075359644844421,
+          "max_velocity_profile_change_m_s": 0.003991919000000621
+        },
+        {
+          "iteration": 39000,
+          "u10_m_s": 10.000203189076748,
+          "kinematic_wall_stress": 0.18774636174999998,
+          "relative_wall_change": 0.00019168945301314478,
+          "max_velocity_profile_change_m_s": 0.0015528699999993734
+        },
+        {
+          "iteration": 40000,
+          "u10_m_s": 10.000344629103928,
+          "kinematic_wall_stress": 0.1877080139,
+          "relative_wall_change": 0.0002042534920119761,
+          "max_velocity_profile_change_m_s": 0.0006068539999999345
+        }
+      ],
+      "stable_last_two_windows": true,
+      "reference_wind_within_half_percent": true,
+      "calibration": {
+        "settled_u10": 9.654627472762934,
+        "old_bulk": 9.8223246587,
+        "new_bulk": 10.173696174616952
+      }
+    }
+  ],
+  "equilibrium_checks": [
+    {
+      "nx": 64,
+      "max_ux_difference_m_s": 1.2500000856618954e-07,
+      "relative_wall_stress_difference": 1.841895036491792e-08
+    },
+    {
+      "nx": 128,
+      "max_ux_difference_m_s": 3.080000139377148e-07,
+      "relative_wall_stress_difference": 3.732640219133998e-08
+    },
+    {
+      "nx": 256,
+      "max_ux_difference_m_s": 0.0002597533710666511,
+      "relative_wall_stress_difference": 7.606633643841842e-05
+    }
+  ]
+}
