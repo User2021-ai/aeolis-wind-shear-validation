@@ -1,0 +1,369 @@
+{
+  "original_history": [
+    {
+      "time": 1000,
+      "minimum": 0.2614568576991274,
+      "peak": 2.1251497474963483,
+      "bulk_ux": 10.173696174617586,
+      "maximum_speed": 11.45399500000004,
+      "minimum_k": 0.1144695724,
+      "maximum_k": 1.42272373,
+      "minimum_epsilon": 0.001170095146,
+      "maximum_epsilon": 26.06631026,
+      "pressure_gradient": 0.01037961506
+    },
+    {
+      "time": 2000,
+      "minimum": 0.2649770296310802,
+      "peak": 2.1183677411834263,
+      "bulk_ux": 10.173696174599417,
+      "maximum_speed": 11.540349480000055,
+      "minimum_k": 0.111150383,
+      "maximum_k": 1.424925796,
+      "minimum_epsilon": 0.001137856116,
+      "maximum_epsilon": 25.94702635,
+      "pressure_gradient": 0.01038057996
+    },
+    {
+      "time": 3000,
+      "minimum": 0.2684558018861949,
+      "peak": 2.115313613148475,
+      "bulk_ux": 10.173696174626485,
+      "maximum_speed": 11.620830480000041,
+      "minimum_k": 0.1098028272,
+      "maximum_k": 1.429460298,
+      "minimum_epsilon": 0.001154407724,
+      "maximum_epsilon": 25.89568692,
+      "pressure_gradient": 0.01041679908
+    },
+    {
+      "time": 4000,
+      "minimum": 0.27191647018068227,
+      "peak": 2.115352993791493,
+      "bulk_ux": 10.173696174621472,
+      "maximum_speed": 11.693491390000025,
+      "minimum_k": 0.1108953876,
+      "maximum_k": 1.43528932,
+      "minimum_epsilon": 0.001226118634,
+      "maximum_epsilon": 25.90068463,
+      "pressure_gradient": 0.01048768635
+    },
+    {
+      "time": 5000,
+      "minimum": 0.27537219409065494,
+      "peak": 2.1179779007886426,
+      "bulk_ux": 10.173696174610761,
+      "maximum_speed": 11.755822730000009,
+      "minimum_k": 0.1149746063,
+      "maximum_k": 1.442667241,
+      "minimum_epsilon": 0.001360952618,
+      "maximum_epsilon": 25.95273057,
+      "pressure_gradient": 0.01059128599
+    },
+    {
+      "time": 6000,
+      "minimum": 0.2788147459041185,
+      "peak": 2.122815353657853,
+      "bulk_ux": 10.173696174642538,
+      "maximum_speed": 11.805327310000001,
+      "minimum_k": 0.1224673232,
+      "maximum_k": 1.451073792,
+      "minimum_epsilon": 0.00156559096,
+      "maximum_epsilon": 26.0451088,
+      "pressure_gradient": 0.01072075136
+    },
+    {
+      "time": 7000,
+      "minimum": 0.28223531227418963,
+      "peak": 2.1295404688872037,
+      "bulk_ux": 10.17369617463059,
+      "maximum_speed": 11.840385840000001,
+      "minimum_k": 0.1334890172,
+      "maximum_k": 1.460188176,
+      "minimum_epsilon": 0.001841099975,
+      "maximum_epsilon": 26.17204029,
+      "pressure_gradient": 0.01086421917
+    },
+    {
+      "time": 8000,
+      "minimum": 0.28562379659325626,
+      "peak": 2.1378350893480262,
+      "bulk_ux": 10.173696174611214,
+      "maximum_speed": 11.860937770000007,
+      "minimum_k": 0.1477069938,
+      "maximum_k": 1.47024281,
+      "minimum_epsilon": 0.002179433807,
+      "maximum_epsilon": 26.3278786,
+      "pressure_gradient": 0.01100856224
+    },
+    {
+      "time": 9000,
+      "minimum": 0.288965862154817,
+      "peak": 2.1473802645980156,
+      "bulk_ux": 10.173696174593445,
+      "maximum_speed": 11.868488110000014,
+      "minimum_k": 0.1643809808,
+      "maximum_k": 1.480770467,
+      "minimum_epsilon": 0.002563709419,
+      "maximum_epsilon": 26.50693964,
+      "pressure_gradient": 0.01114361462
+    },
+    {
+      "time": 10000,
+      "minimum": 0.29224211070891115,
+      "peak": 2.1578608024449624,
+      "bulk_ux": 10.173696174597698,
+      "maximum_speed": 11.865506440000019,
+      "minimum_k": 0.1825759735,
+      "maximum_k": 1.49153935,
+      "minimum_epsilon": 0.002972475697,
+      "maximum_epsilon": 26.70356383,
+      "pressure_gradient": 0.01126408226
+    },
+    {
+      "time": 11000,
+      "minimum": 0.29542805188038385,
+      "peak": 2.1689714215228957,
+      "bulk_ux": 10.17369617462484,
+      "maximum_speed": 11.85469765000002,
+      "minimum_k": 0.2013882229,
+      "maximum_k": 1.502398592,
+      "minimum_epsilon": 0.003385009958,
+      "maximum_epsilon": 26.9122156,
+      "pressure_gradient": 0.01136888742
+    },
+    {
+      "time": 12000,
+      "minimum": 0.2984946088863504,
+      "peak": 2.1804219896128876,
+      "bulk_ux": 10.173696174627826,
+      "maximum_speed": 11.838508920000018,
+      "minimum_k": 0.2200806604,
+      "maximum_k": 1.513340746,
+      "minimum_epsilon": 0.003784748323,
+      "maximum_epsilon": 27.12757526,
+      "pressure_gradient": 0.01145941375
+    }
+  ],
+  "variants": {
+    "control": {
+      "history": [
+        {
+          "time": 13000,
+          "minimum": 0.30140976430236377,
+          "peak": 2.191942775283424,
+          "bulk_ux": 10.173696174585963,
+          "maximum_speed": 11.818926750000013,
+          "minimum_k": 0.2381206267,
+          "maximum_k": 1.52391872,
+          "minimum_epsilon": 0.004160306924,
+          "maximum_epsilon": 27.34463919,
+          "pressure_gradient": 0.01153793732,
+          "max_normalized_stress_change": 0.01153249304048476,
+          "x_of_max_change_m": -1.6875
+        },
+        {
+          "time": 14000,
+          "minimum": 0.30414142845862496,
+          "peak": 2.2032907395228696,
+          "bulk_ux": 10.173696174630493,
+          "maximum_speed": 11.797462160000011,
+          "minimum_k": 0.2551595588,
+          "maximum_k": 1.533959064,
+          "minimum_epsilon": 0.004504950088,
+          "maximum_epsilon": 27.55884597,
+          "pressure_gradient": 0.01160668601,
+          "max_normalized_stress_change": 0.011355488731379815,
+          "x_of_max_change_m": -1.6875
+        },
+        {
+          "time": 15000,
+          "minimum": 0.30666084839765456,
+          "peak": 2.2142562434753184,
+          "bulk_ux": 10.173696174633028,
+          "maximum_speed": 11.775217810000006,
+          "minimum_k": 0.2709924797,
+          "maximum_k": 1.543322804,
+          "minimum_epsilon": 0.00481548868,
+          "maximum_epsilon": 27.76621486,
+          "pressure_gradient": 0.01166744999,
+          "max_normalized_stress_change": 0.010970625061028638,
+          "x_of_max_change_m": -1.8125
+        },
+        {
+          "time": 16000,
+          "minimum": 0.30894560397854753,
+          "peak": 2.224668487620526,
+          "bulk_ux": 10.173696174644748,
+          "maximum_speed": 11.752974630000004,
+          "minimum_k": 0.2855178058,
+          "maximum_k": 1.551896687,
+          "minimum_epsilon": 0.005091183524,
+          "maximum_epsilon": 27.96346287,
+          "pressure_gradient": 0.0117215205,
+          "max_normalized_stress_change": 0.010415604939311152,
+          "x_of_max_change_m": -1.8125
+        }
+      ],
+      "passes_window_test": false,
+      "restart_field_sha256": {
+        "U": "5043a16d5be1d185a209dba96f5730d0f1278c79f8abc614b3a17ed7f51b21c9",
+        "p": "164c2191d12f30c15d3d0b1f07e8e28157c8efc16249fbbc2e3e3487547120c2",
+        "k": "0da6b3fd03c72de7cac8c7fa8e7da2a0b2725a3cad60d0a0f88ccfe46518f3f9",
+        "epsilon": "8afab68bef0a7dd86eb8b976e71c2fa2f5ab7d57b6b920a5640c801905c35509",
+        "nut": "4442fff612f46f4d6d3d53dec23c12cc0d4be78030ff22a7524976a3e70bab16",
+        "phi": "dcef5f4016b28a2caf14f71a991a1670795e1f6616dc88c0053f9162d4722894"
+      },
+      "final_rms_stress_difference_from_control": 0.0,
+      "last_window_max_U_change": 0.02227356999999941,
+      "last_window_max_k_change": 0.014525449499999954,
+      "last_window_max_epsilon_change": 0.19724800999999914
+    },
+    "tight": {
+      "history": [
+        {
+          "time": 13000,
+          "minimum": 0.30142592339254154,
+          "peak": 2.191999404770625,
+          "bulk_ux": 10.17369617461547,
+          "maximum_speed": 11.818844900000016,
+          "minimum_k": 0.238206863,
+          "maximum_k": 1.523981395,
+          "minimum_epsilon": 0.004161873899,
+          "maximum_epsilon": 27.34570881,
+          "pressure_gradient": 0.0115382986,
+          "max_normalized_stress_change": 0.011589220559726332,
+          "x_of_max_change_m": -1.6875
+        },
+        {
+          "time": 14000,
+          "minimum": 0.30417200028341423,
+          "peak": 2.203404292060611,
+          "bulk_ux": 10.173696174634683,
+          "maximum_speed": 11.79727655000001,
+          "minimum_k": 0.2553279882,
+          "maximum_k": 1.534075971,
+          "minimum_epsilon": 0.004508009067,
+          "maximum_epsilon": 27.56099548,
+          "pressure_gradient": 0.01160736752,
+          "max_normalized_stress_change": 0.011412434691582707,
+          "x_of_max_change_m": -1.6875
+        },
+        {
+          "time": 15000,
+          "minimum": 0.3067031906206006,
+          "peak": 2.214421746068648,
+          "bulk_ux": 10.173696174588162,
+          "maximum_speed": 11.774923680000008,
+          "minimum_k": 0.2712334283,
+          "maximum_k": 1.543482767,
+          "minimum_epsilon": 0.004819818808,
+          "maximum_epsilon": 27.76935412,
+          "pressure_gradient": 0.0116683784,
+          "max_normalized_stress_change": 0.0110225974934961,
+          "x_of_max_change_m": -1.8125
+        },
+        {
+          "time": 16000,
+          "minimum": 0.30899681794137523,
+          "peak": 2.2248780087314257,
+          "bulk_ux": 10.173696174584478,
+          "maximum_speed": 11.752577010000005,
+          "minimum_k": 0.2858187729,
+          "maximum_k": 1.552088901,
+          "minimum_epsilon": 0.005096513306,
+          "maximum_epsilon": 27.96744344,
+          "pressure_gradient": 0.01172263708,
+          "max_normalized_stress_change": 0.010459624522446642,
+          "x_of_max_change_m": -1.8125
+        }
+      ],
+      "passes_window_test": false,
+      "restart_field_sha256": {
+        "U": "5043a16d5be1d185a209dba96f5730d0f1278c79f8abc614b3a17ed7f51b21c9",
+        "p": "164c2191d12f30c15d3d0b1f07e8e28157c8efc16249fbbc2e3e3487547120c2",
+        "k": "0da6b3fd03c72de7cac8c7fa8e7da2a0b2725a3cad60d0a0f88ccfe46518f3f9",
+        "epsilon": "8afab68bef0a7dd86eb8b976e71c2fa2f5ab7d57b6b920a5640c801905c35509",
+        "nut": "4442fff612f46f4d6d3d53dec23c12cc0d4be78030ff22a7524976a3e70bab16",
+        "phi": "dcef5f4016b28a2caf14f71a991a1670795e1f6616dc88c0053f9162d4722894"
+      },
+      "final_rms_stress_difference_from_control": 0.00012892330926595052,
+      "last_window_max_U_change": 0.02237717000000039,
+      "last_window_max_k_change": 0.014585486499999967,
+      "last_window_max_epsilon_change": 0.19808932000000112
+    },
+    "relaxed": {
+      "history": [
+        {
+          "time": 13000,
+          "minimum": 0.2994918666230707,
+          "peak": 2.183970643475693,
+          "bulk_ux": 10.17369617461739,
+          "maximum_speed": 11.833112250000013,
+          "minimum_k": 0.2253407744,
+          "maximum_k": 1.516424863,
+          "minimum_epsilon": 0.003895266555,
+          "maximum_epsilon": 27.19094413,
+          "pressure_gradient": 0.01148352806,
+          "max_normalized_stress_change": 0.0035505873317025483,
+          "x_of_max_change_m": -1.8125
+        },
+        {
+          "time": 14000,
+          "minimum": 0.3003338595082457,
+          "peak": 2.1872900131812334,
+          "bulk_ux": 10.173696174602924,
+          "maximum_speed": 11.827507280000015,
+          "minimum_k": 0.2305350515,
+          "maximum_k": 1.519447847,
+          "minimum_epsilon": 0.004003542765,
+          "maximum_epsilon": 27.25344732,
+          "pressure_gradient": 0.01150665355,
+          "max_normalized_stress_change": 0.003322356486095579,
+          "x_of_max_change_m": -1.6875
+        },
+        {
+          "time": 15000,
+          "minimum": 0.30116197473260725,
+          "peak": 2.1906004886101784,
+          "bulk_ux": 10.173696174621144,
+          "maximum_speed": 11.821707390000014,
+          "minimum_k": 0.2356591683,
+          "maximum_k": 1.522454613,
+          "minimum_epsilon": 0.00410949273,
+          "maximum_epsilon": 27.31584721,
+          "pressure_gradient": 0.01152868699,
+          "max_normalized_stress_change": 0.0033135922085119063,
+          "x_of_max_change_m": -1.6875
+        },
+        {
+          "time": 16000,
+          "minimum": 0.3019771236211893,
+          "peak": 2.1938981836445524,
+          "bulk_ux": 10.173696174660044,
+          "maximum_speed": 11.815742870000012,
+          "minimum_k": 0.2407010519,
+          "maximum_k": 1.525416536,
+          "minimum_epsilon": 0.004212943125,
+          "maximum_epsilon": 27.37802659,
+          "pressure_gradient": 0.0115497535,
+          "max_normalized_stress_change": 0.003300445792134621,
+          "x_of_max_change_m": -1.6875
+        }
+      ],
+      "passes_window_test": false,
+      "restart_field_sha256": {
+        "U": "5043a16d5be1d185a209dba96f5730d0f1278c79f8abc614b3a17ed7f51b21c9",
+        "p": "164c2191d12f30c15d3d0b1f07e8e28157c8efc16249fbbc2e3e3487547120c2",
+        "k": "0da6b3fd03c72de7cac8c7fa8e7da2a0b2725a3cad60d0a0f88ccfe46518f3f9",
+        "epsilon": "8afab68bef0a7dd86eb8b976e71c2fa2f5ab7d57b6b920a5640c801905c35509",
+        "nut": "4442fff612f46f4d6d3d53dec23c12cc0d4be78030ff22a7524976a3e70bab16",
+        "phi": "dcef5f4016b28a2caf14f71a991a1670795e1f6616dc88c0053f9162d4722894"
+      },
+      "final_rms_stress_difference_from_control": 0.018868499247983252,
+      "last_window_max_U_change": 0.005974010000000973,
+      "last_window_max_k_change": 0.005043504200000021,
+      "last_window_max_epsilon_change": 0.06219387999999881
+    }
+  }
+}
